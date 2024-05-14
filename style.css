@@ -1,0 +1,142 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Abel", sans-serif;
+        }
+        
+        body {
+            background: rgb(169, 169, 192);
+        }
+        
+        .appform {
+            max-width: 600px;
+            background: rgb(1, 1, 32);
+            margin: 100px auto;
+            color: white;
+            font-family: "Abel", sans-serif;
+            padding: 40px 30px;
+            border-radius: 10px;
+        }
+        
+        .appform .user {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        .appform .imputform {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 10px 0px;
+        }
+        
+        @media only screen and (max-width: 450px) {
+            .appform .imputform {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            body {
+                padding: 0px 15px;
+            }
+        }
+        
+        .appform .imputform input {
+            width: 100%;
+            height: 40px;
+            outline: none;
+            padding-left: 10px;
+            border-radius: 4px;
+            border: none;
+        }
+        
+        .appform #email input {
+            width: 100%;
+            height: 40px;
+            outline: none;
+            padding-left: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            border: none;
+        }
+        
+        .appform .select {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 5px 0px;
+        }
+        
+        @media only screen and (max-width: 450px) {
+            .appform .select {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            body {
+                padding: 0px 15px;
+            }
+        }
+        
+        .appform .location,
+        .appform .edu_qua,
+        .appform .edu_status {
+            width: 100%;
+            height: 40px;
+            padding: 10px;
+            padding-left: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        
+        .appform .duration #dur_main {
+            font-weight: bold;
+            margin: 30px 15px 20px 15px;
+        }
+        
+        .appform .duration #dur_sub {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 5px 0px 10px 0px;
+            margin-left: 30px;
+        }
+        
+        @media only screen and (max-width: 450px) {
+            .appform .duration #dur_sub {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            body {
+                padding: 0px 15px;
+            }
+        }
+        
+        .appform .cmt {
+            font-weight: bold;
+            margin: 15px;
+        }
+        
+        .appform #textarea1 {
+            width: 100%;
+            outline: none;
+            border: none;
+            padding: 10px;
+        }
+        
+        .appform .btn {
+            width: 90px;
+            margin-top: 10px;
+            background: #0303fc;
+            height: 30px;
+            border-radius: 4px;
+            outline: none;
+            border: none;
+            font-weight: bolder;
+            color: white;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        
+        .appform .btn:hover {
+            background: white;
+            color: #0303fc;
+        }

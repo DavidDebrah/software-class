@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="appform">
+        <div class="user">
+            <div>
+                <h3 id="heading">Client Details </h3>
+            </div>
+            <div>
+                <p><i class="bi bi-person-circle"></i></p>
+            </div>
+        </div>
+        <form>
+            <div class="imputform">
+                <div>
+                    <input type="text" placeholder="First Name" required>
+                </div>
+                <div>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <div>
+                    <input type="phonenum" placeholder="Phone Number" required pattern=+xxxxxxxxxxxx title="Phone number required">
+                </div>
+            </div>
+            <div id="email">
+                <input type="email" placeholder="Email" required>
+            </div>
+
+            <div class="select">
+                <select class="location" name="location" id="">
+                    <option value="">Location</option>
+                    <option value="Tema">Tema</option>
+                    <option value="Accra">Accra</option>
+                    <option value="Kumasi">Kumasi</option>
+                </select>
+                <select class="edu_qua" name="Educational Qualification" id="">
+                    <option value="">Educational Qualification</option>
+                    <option value="Tetiary">Tetiary</option>
+                    <option value="SHS">SHS</option>
+                    <option value="JHS">JHS</option>
+                    <option value="Other">Other</option>
+                </select>
+                <select class="edu_status" name="Employment Status" id="edu">
+                    <option value="Employment Status">Employment Status</option>
+                    <option value="Not Employed">Not Employed</option>
+                    <option value="Employed">Employed</option>
+                    <option value="Self-Employed">Self-Employed</option>
+                </select>
+            </div>
+            <div class="duration">
+                <label id="dur_main">Duration of Employment:</label><br>
+                <div id="dur_sub">
+                    <div>
+                        <label><input type="radio" name="select"> 1 - 5 Years</label>
+                    </div>
+                    <div>
+                        <label><input type="radio" name="select"> 6 - 10 Years</label>
+                    </div>
+                    <div>
+                        <label><input type="radio" name="select"> Above 10 Years</label><br>
+                    </div>
+                </div>
+            </div>
+            <label class="cmt">Comment:</label><br>
+            <label><textarea name="textarea" id="textarea1" cols="30" rows="10"></textarea>
+                </label> <br>
+            <button class="btn">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
