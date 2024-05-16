@@ -6,12 +6,12 @@
         }
         
         body {
-            background: rgb(169, 169, 192);
+            background: rgb(0, 0, 0);
         }
         
         .appform {
             max-width: 600px;
-            background: rgb(1, 1, 32);
+            background: rgb(0, 0, 255);
             margin: 100px auto;
             color: white;
             font-family: "Abel", sans-serif;
